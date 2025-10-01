@@ -1,0 +1,32 @@
+# Ultralytics YOLO11l-pose DEEPX model metadata
+# This file contains model configuration and class names for DEEPX pose estimation inference
+
+# Basic model information
+task: pose
+stride: 32
+batch: 1
+imgsz: [640, 640]
+channels: 3
+
+# Keypoint shape for pose estimation (17 keypoints, 3 coordinates each: x, y, visibility)
+kpt_shape: [17, 3]
+
+# Model arguments used during export
+args:
+  batch: 1
+  half: false
+  dynamic: false
+  simplify: true
+  nms: false
+
+# COCO dataset class names (for pose estimation, typically only 'person' class)
+names:
+  0: person
+
+# Model metadata
+version: 8.3.214
+date: 2025-10-16T16:39:56.062432
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+author: Ultralytics
+description: Ultralytics YOLO11l-pose model trained on COCO-pose dataset, exported to DEEPX format

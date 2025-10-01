@@ -1,0 +1,27 @@
+# YOLOv11 Object Detection Requirements
+# Requirements for yolo11l, yolo11l-seg, yolo11l-obb, yolo11l-pose
+
+# Core ML/AI packages
+ultralytics>=8.3.0          # YOLOv11 framework
+onnxruntime>=1.16.0         # ONNX model inference
+numpy>=1.21.0               # Numerical computing
+torch>=2.0.0                # PyTorch for tensor operations
+
+
+# Computer Vision
+opencv-python>=4.5.0        # Image processing and visualization
+
+# Network utilities
+urllib3>=1.26.0             # HTTP client (used in export scripts for SSL bypass)
+
+# Optional: GPU acceleration
+# onnxruntime-gpu>=1.16.0   # Uncomment if you have NVIDIA GPU for faster ONNX inference
+# torch with CUDA support    # Install PyTorch with CUDA from https://pytorch.org/
+
+# Utilities
+pathlib2>=2.3.0; python_version < "3.4"
+
+
+# Additional utilities
+onnxscript>=0.5.3
+onnxslim>=0.1.71
